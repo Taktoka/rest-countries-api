@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Taktoka/rest-countries-api.git](https://github.com/Taktoka/rest-countries-api.git)
-- Live Site URL: [https://rest-countries-api-six-eta.vercel.app/details](https://rest-countries-api-six-eta.vercel.app/details)
+- Live Site URL: [https://rest-countries-api-six-eta.vercel.app/](https://rest-countries-api-six-eta.vercel.app/)
 
 ## My process
 

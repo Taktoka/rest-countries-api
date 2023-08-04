@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: var(--very-light-gray);
   min-height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 100px auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+header {
+  height: 75px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 25px 80px;
+  min-width: 375px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 4px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+}
+header h1 a {
+  font-size: 25px;
+  color: var(--very-dark-blue);
+}
+header .mode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+header .mode p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--very-dark-blue-light);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mode i {
+  color: var(--very-dark-blue-light);
+}
+
+header .show-mode {
+  display: flex;
+}
+header .hide {
+  display: none;
+}
+
+.dark-theme {
+  background-color: var(--very-dark-blue);
+}
+
+.dark-theme header,
+.dark-theme form,
+.dark-theme .details .borders span,
+.dark-theme form input,
+.dark-theme .filter-list,
+.dark-theme .main-home .box,
+.dark-theme .details button,
+.dark-theme .homepage button,
+.dark-theme header .mode,
+.dark-theme .details .borders li {
+  background-color: var(--dark-blue);
+}
+
+.dark-theme .details .info span,
+.dark-theme .main-home span {
+  color: var(--very-light-gray) !important;
+}
+
+.dark-theme i,
+.dark-theme h1,
+.dark-theme p,
+.dark-theme span,
+.dark-theme h3,
+.dark-theme li,
+.dark-theme a,
+.dark-theme button,
+.dark-theme ::placeholder {
+  color: var(--white) !important;
+}
+
+@media (max-device-width: 375px) {
+  .container {
+    padding: 100px 0 0;
   }
-  to {
-    transform: rotate(360deg);
+  header {
+    padding: 25px 20px;
+  }
+  header h1 a {
+    font-size: 15px;
+  }
+  header .mode p {
+    font-size: 11px;
+  }
+  header .mode i {
+    font-size: 13px;
   }
 }
